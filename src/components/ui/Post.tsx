@@ -6,7 +6,7 @@ export const Post = () => {
   return (
     <div className="w-full shadow-md mb-5 rounded-lg bg-white">
       <ProfileName name="Daniel" lastName="Mendoza" />
-      <div className="relative h-[600px]">
+      <div className="relative h-[300px] md:h-[450px]">
         <Image
           src={`https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg`}
           alt="Post Image"
