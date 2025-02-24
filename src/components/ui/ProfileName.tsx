@@ -8,7 +8,7 @@ interface ProfileNameProps {
 
 export const ProfileName: React.FC<ProfileNameProps> = ({ name, lastName }) => {
   return (
-    <div className="flex items-center p-4">
+    <div className="flex items-center">
       <Image
         src={`https://ui-avatars.com/api/?name=${name}+${lastName}&background=random`}
         alt="Profile Picture"
@@ -16,7 +16,7 @@ export const ProfileName: React.FC<ProfileNameProps> = ({ name, lastName }) => {
         height={30}
         className="rounded-full"
       />
-      <h1 className="ml-3">{`${name} ${lastName}`}</h1>
+      <h1 className="ml-3 text-sm">{`${name} ${lastName}`}</h1>
     </div>
   );
 };
