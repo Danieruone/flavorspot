@@ -4,6 +4,7 @@ import Image from "next/image";
 // icons
 import { FcLike } from "react-icons/fc";
 import { FaRegComment } from "react-icons/fa6";
+import { FaRegStar } from "react-icons/fa";
 
 // components
 import { ProfileName } from "./ProfileName";
@@ -23,11 +24,17 @@ export const Post = () => {
           className="object-cover"
         />
       </div>
-      <div className="p-4 flex items-center">
+      <div className="flex justify-between items-center p-4">
         <div className="flex items-center">
-          <FcLike size={20} /> <span className="text-sm ml-2">100</span>
+          <div className="flex items-center">
+            <FcLike size={20} /> <span className="text-sm ml-2">100</span>
+          </div>
+          <FaRegComment size={18} className="ml-5" />
         </div>
-        <FaRegComment size={18} className="ml-5" />
+        <div className="flex items-center">
+          <FaRegStar />
+          <span className="text-sm ml-2">4.5</span>
+        </div>
       </div>
       <Comments />
     </div>
