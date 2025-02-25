@@ -16,7 +16,7 @@ export const ProfileName: React.FC<ProfileNameProps> = ({ name, lastName }) => {
         height={30}
         className="rounded-full"
       />
-      <h1 className="ml-3 text-sm">{`${name} ${lastName}`}</h1>
+      <h1 className="ml-2 text-sm">{`${name} ${lastName}`}</h1>
     </div>
   );
 };
